@@ -15,12 +15,15 @@ docker exec -it <container-id> /bin/bash
 control+p, control+q
 
 ## SequelPro Access
-1) Visit 127.0.0.1:\<http-port\>/adminer.php
+1) Visit 127.0.0.1:\<container-http-port\>/adminer.php
 
 2) Login with user root, no pass
 
-3) Create a new user {server: %, privs: \*.\*, all privs + grant option}
+3) Set a root password
 
-4) Run the MySQL command 'flush privileges;'
+4) Create a new user {server: %, privs: \*.\*, all privs + grant option}
 
-5) Open SequelPro and connect on Docker port mapped to 3306
+5) Run the MySQL command 'flush privileges;'
+
+6) Open SequelPro and connect on container port mapped to 3306
+
