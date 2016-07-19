@@ -10,7 +10,7 @@ docker run -d -P -v /path/to/webroot/folder:/var/www/html handlpartners-lamp-php
 docker ps
 
 ## Docker Exec
-docker exec -it <container-id> /bin/bash
+docker exec -it \<container-id\> /bin/bash
 
 control+p, control+q
 
